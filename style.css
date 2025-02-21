@@ -202,6 +202,7 @@ nav ul li {
 
 .purple {
   color: #3bff12;
+  
 }
 
 .leftSection {
@@ -255,6 +256,10 @@ nav ul li {
   max-width: 600px;
   font-size: 1.2rem;
   line-height: 1.6;
+}
+.text1 li {
+  padding: 4px;
+  font-size: 21px;
 }
 
 /* ======= PROJECTS SECTION ======= */
