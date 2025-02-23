@@ -64,9 +64,11 @@ nav ul li a {
   color: white;
   display: flex;
   align-items: center;
-  gap: 8px; /* Spacing between text & icon */
+  gap: 8px; /*Spacing between text & icon */
   transition: color 0.3s ease-in-out;
 }
+
+
 
 nav ul li a:hover {
   color: rgb(255, 196, 0);
@@ -80,6 +82,61 @@ nav ul li a i {
 nav ul li a:hover i {
   transform: scale(1.2);
 }
+
+/* Default navigation styles (for desktop) */
+nav ul li a {
+  color: black; /* Default color for desktop */
+  font-size: 16px; /* Default font size for desktop */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .menu-content {
+    display: none; /* Hide menu by default */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Space between items */
+    position: absolute;
+    top: 60px; /* Adjust based on your navbar height */
+    left: 0;
+    width: 38%;
+    background-color: #1f355f; /* Background color for menu */
+    padding: 10px 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-content.show {
+    display: flex; /* Show menu when active */
+  }
+
+  .menu-content li a {
+    font-size: 14px !important; /* Force smaller font size for mobile */
+    
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+
 
 /* Mobile Navigation */
 .menu-btn {
@@ -101,24 +158,24 @@ nav ul li a:hover i {
   margin: 10px;
 }
 
-/* Mobile menu styles */
+/*Mobile menu styles */
 @media (max-width: 768px) {
   nav {
     padding: 10px 20px;
   }
 
   .menu-btn {
-    display: block; /* Show menu button */
+    display: block; 
   }
 
   .menu-content {
-    display: none; /* Hide menu initially */
+    display: none; 
     flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
-    width: 100%;
-    background-color: #1E3A5F;
+    width: 36%;
+    background-color:#001b4f;
     padding: 10px 0;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -127,7 +184,7 @@ nav ul li a:hover i {
   }
 
   .menu-content.show {
-    display: flex; /* Show when active */
+    display: flex; 
     opacity: 1;
     transform: translateY(0);
   } 
@@ -136,10 +193,13 @@ nav ul li a:hover i {
     text-align: center;
     padding: 10px 0;
     width: 100%;
+    
+    
   }
 
   .menu-content li a {
     justify-content: center;
+    color: #3bff12;
   }
 }
 
@@ -278,7 +338,29 @@ nav ul li a:hover i {
   margin: 2px auto;
 }  
 
+/* GitHub Contribution Graph */
+.github-graph {
+  text-align: center;
+  margin-top: 30px;
+}
 
+.github-graph h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.github-graph img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.github-graph p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 10px;
+}
 
 
 /* Responsive Adjustments */
