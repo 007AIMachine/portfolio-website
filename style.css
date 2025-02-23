@@ -313,7 +313,7 @@ nav ul li a:hover i {
 }
 
 /* ======= FOOTER ======= */
-.footerclass {
+/* .footerclass {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -325,6 +325,53 @@ nav ul li a:hover i {
   padding: 10px 20px;
   color: white;
   z-index: 1000; /* Ensures it's above other elements */
+/* } */
+
+/* .footerclass p {
+  flex: 1;
+  text-align: left;
+}
+
+.footerclass .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.footerclass .social-icons a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.footerclass .social-icons a:hover {
+  color: #ddd;
+}  */
+
+
+
+/* ======= FOOTER ======= */
+.footerclass {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  z-index: 1000; /* Ensures it's above other elements */
+  /* background-color: #1f355f; Add background color for better visibility */
+  /* border-top: 2px solid rgba(255, 255, 255, 0.1); Optional: Light border */
+}
+
+/* Footer style for desktop screens (fixed position) */
+@media (min-width: 769px) {
+  .footerclass {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .footerclass p {
