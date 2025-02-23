@@ -66,6 +66,7 @@ nav ul li a {
   align-items: center;
   gap: 8px; /*Spacing between text & icon */
   transition: color 0.3s ease-in-out;
+  
 }
 
 
@@ -85,7 +86,8 @@ nav ul li a:hover i {
 
 /* Default navigation styles (for desktop) */
 nav ul li a {
-  color: black; /* Default color for desktop */
+  /* color: black; Default color for desktop */
+  color: #00ff87de;
   font-size: 16px; /* Default font size for desktop */
   text-decoration: none;
   transition: color 0.3s ease-in-out;
