@@ -74,29 +74,14 @@
     loop: true          // Loops the animation
   });
 
-  // Mobile Menu Toggle
-//   const menuBtn = document.querySelector(".menu-btn");
-//   const menuContent = document.querySelector(".menu-content");
-
-//   menuBtn.addEventListener("click", function () {
-//     menuContent.classList.toggle("show");
-//   });
-
-//   // Close menu when clicking outside
-//   document.addEventListener("click", function (event) {
-//     if (!menuBtn.contains(event.target) && !menuContent.contains(event.target)) {
-//       menuContent.classList.remove("show");
-//     }
-//   });
-// });
-  // 
   
-  const menuBtn = document.querySelector('.menu-btn');
-  const menuContent = document.querySelector('.menu-content');
 
-  menuBtn.addEventListener('click', () => {
-    menuContent.classList.toggle('show');
-  });
+
+  // script.js
+function toggleMenu() {
+  const menuContent = document.querySelector('.menu-content');
+  menuContent.classList.toggle('show');
+}
 
 
 
