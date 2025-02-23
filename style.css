@@ -90,6 +90,16 @@ nav ul li a:hover i {
   font-size: 24px;
   cursor: pointer;
 }
+/*optional i am adding for check*/
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 10px;
+}
 
 /* Mobile menu styles */
 @media (max-width: 768px) {
@@ -120,7 +130,7 @@ nav ul li a:hover i {
     display: flex; /* Show when active */
     opacity: 1;
     transform: translateY(0);
-  }
+  } 
 
   .menu-content li {
     text-align: center;

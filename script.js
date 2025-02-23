@@ -77,11 +77,17 @@
   
 
 
-  // script.js
+//   // script.js
+// function toggleMenu() {
+//   const menuContent = document.querySelector('.menu-content');
+//   menuContent.classList.toggle('show');
+// }
+
+
+
 function toggleMenu() {
+  console.log("Menu button clicked!"); // Debugging
   const menuContent = document.querySelector('.menu-content');
   menuContent.classList.toggle('show');
+  console.log("Menu content class list:", menuContent.classList); // Debugging
 }
-
-
-
