@@ -1,8 +1,10 @@
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
 
 body {
   display: flex;
@@ -66,10 +68,7 @@ nav ul li a {
   align-items: center;
   gap: 8px; /*Spacing between text & icon */
   transition: color 0.3s ease-in-out;
-  
 }
-
-
 
 nav ul li a:hover {
   color: rgb(255, 196, 0);
@@ -115,7 +114,6 @@ nav ul li a {
 
   .menu-content li a {
     font-size: 14px !important; /* Force smaller font size for mobile */
-    
   }
 }
 
@@ -137,8 +135,6 @@ nav ul li a {
   font-size: 1.5rem;
   color: #ccc;
 }
-
-
 
 /* Mobile Navigation */
 .menu-btn {
@@ -167,17 +163,17 @@ nav ul li a {
   }
 
   .menu-btn {
-    display: block; 
+    display: block;
   }
 
   .menu-content {
-    display: none; 
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
     width: 36%;
-    background-color:#001b4f;
+    background-color: #001b4f;
     padding: 10px 0;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -186,17 +182,15 @@ nav ul li a {
   }
 
   .menu-content.show {
-    display: flex; 
+    display: flex;
     opacity: 1;
     transform: translateY(0);
-  } 
+  }
 
   .menu-content li {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    
-    
   }
 
   .menu-content li a {
@@ -216,8 +210,8 @@ nav ul li a {
 
 .rightSection {
   flex: 1;
-  font-size: 2rem;
-  padding: 20px;
+  font-size: 1.6rem;
+  padding: 37px 0px;
   text-align: center;
 }
 
@@ -233,7 +227,7 @@ nav ul li a {
 }
 
 .leftSection img {
-  height: auto;
+  height:329px;
   max-width: 560px;
   width: 100%;
   margin: 50px 0;
@@ -262,20 +256,27 @@ nav ul li a {
   gap: 20px; /* Space between text and skills */
 }
 
-.about-text  {
+.about-text {
   max-width: 600px;
   font-size: 1.2rem;
   line-height: 1.6;
 }
 /* ======= About, contact, forkpro, Image ======= */
-.about-img, .projects-img, .contact-img, .fork-project-img, {
+.about-img,
+.projects-img,
+.contact-img,
+.fork-project-img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 9px 0 20px 0; /* 9px margin-top, 20px margin-bottom */
 }
 
-.about-img img, .projects-img img, .contact-img img,.fork-project-img, img{
+.about-img img,
+.projects-img img,
+.contact-img img,
+.fork-project-img,
+img {
   width: 300px; /* Fixed width */
   height: 300px; /* Fixed height */
   border-radius: 50%; /* Optional: Makes the image circular */
@@ -283,11 +284,8 @@ nav ul li a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
   margin-top: 37px;
 }
-.leftSection img{
+.leftSection img {
   border-radius: 12px;
-
-
-
 }
 .text1 {
   margin-top: 4px;
@@ -303,10 +301,125 @@ nav ul li a {
   font-size: 1.1rem;
 }
 
+.technical-skills {
+  margin: 30px auto; /* Centers the box horizontally */
+  padding: 20px;
+  background-color: #1f355f;
+  border-radius: 10px;
+  color: white;
+  width: 50vw; /* Adjust width as needed */
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.technical-skills h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #3bff12;
+}
+
+.technical-skills ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0; /* Remove default margin */
+  text-align: left; /* Align list items to the left */
+}
+
+.technical-skills ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  padding-left: 15px; /* Adjust this value */
+  position: relative;
+}
+
+.technical-skills ul li::before {
+  content: "•"; /* Custom bullet point */
+  color: #3bff12; /* Accent color for bullet points */
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0; /* Adjust this value */
+  top: -3px;
+}
+
+.technical-skills ul li strong {
+  color: #3bff12; /* Accent color for skill categories */
+}
+
+/* New Section Styles */
+
+
+
+
+/* For large desktops (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+  .skills {
+    width: 44%;
+    font-size: 24px;
+    padding: 50px;
+  }
+}
+.paragraph1, .Technicalitem {
+  text-align: center;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #3bff12;
+  padding: 14px;
+  margin: 0; /* Remove default margin */
+}
+
+.Tech-Skill {
+  text-align: center;
+  padding: 12px;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 19px;
+  color: white; /* Add a readable color for the paragraph */
+  line-height: 1.6; /* Improve readability */
+}
+
+.skills {
+  margin: 0 auto; /* Center the div */
+  padding: 41px 63px 35px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #182846;
+  color:#00f3ff; /* Ensure text is readable on dark background */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+
+.skills ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  margin: 10px 0; /* Add spacing between list items */
+  padding-left: 20px; /* Add space for the arrow/bullet */
+  position: relative; /* Required for positioning the arrow/bullet */
+  text-align: left; /* Align text to the left */
+}
+
+.skills li::before {
+  content: "➜"; /* Unicode arrow (you can use "•" for a bullet) */
+  color: #3bff12; /* Match the arrow/bullet color to your theme */
+  font-size: 18px; /* Adjust size as needed */
+  position: absolute;
+  left: 0; /* Position the arrow/bullet to the left */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+}
+
+
+
 /* /* Skills Container */
-  .skills-container {
+.skills-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   justify-items: center;
   align-items: center;
@@ -326,7 +439,6 @@ nav ul li a {
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
-
 }
 
 .skill-box:hover {
@@ -338,7 +450,7 @@ nav ul li a {
   height: 100%;
   object-fit: cover;
   margin: 2px auto;
-}  
+}
 
 /* GitHub Contribution Graph */
 .github-graph {
@@ -363,7 +475,6 @@ nav ul li a {
   color: #ccc;
   margin-top: 10px;
 }
-
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -396,46 +507,7 @@ nav ul li a {
   }
 }
 
-/* ======= FOOTER ======= */
-/* .footerclass {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  color: white;
-  z-index: 1000; /* Ensures it's above other elements */
-/* } */
-
-/* .footerclass p {
-  flex: 1;
-  text-align: left;
-}
-
-.footerclass .social-icons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 15px;
-}
-
-.footerclass .social-icons a {
-  color: white;
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.footerclass .social-icons a:hover {
-  color: #ddd;
-}  */
-
-
-
-/* ======= FOOTER ======= */
+/*======= FOOTER ======= */
 .footerclass {
   width: 100%;
   font-size: 20px;
@@ -444,31 +516,34 @@ nav ul li a {
   align-items: center;
   padding: 10px 20px;
   color: white;
-  z-index: 1000; /* Ensures it's above other elements */
+  z-index: 1000; /*Ensures it's above other elements  */
   /* background-color: #1f355f; Add background color for better visibility */
   /* border-top: 2px solid rgba(255, 255, 255, 0.1); Optional: Light border */
-}
+   }  
+
 
 /* Footer style for desktop screens (fixed position) */
-@media (min-width: 769px) {
+ @media (min-width: 769px) {
   .footerclass {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     left: 0;
   }
-}
+} 
+
+
 
 .footerclass p {
   flex: 1;
   text-align: left;
-}
+} 
 
 .footerclass .social-icons {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 15px;
-}
+} 
 
 .footerclass .social-icons a {
   color: white;
@@ -479,3 +554,4 @@ nav ul li a {
 .footerclass .social-icons a:hover {
   color: #ddd;
 }
+
