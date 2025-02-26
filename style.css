@@ -206,17 +206,32 @@ nav ul li a {
   align-items: center;
   padding: 40px 20px;
   flex-wrap: wrap; /* Makes it responsive */
+ 
 }
 
 .rightSection {
   flex: 1;
-  font-size: 1.6rem;
-  padding: 37px 0px;
+  font-size: 1.3rem;
+  padding: 37px 0px 0px 36px;
   text-align: center;
+  
+  
 }
-
+.rightSection1{
+  height: 80vh;
+}
 .purple {
   color: #3bff12;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.white1{
+  color: white;
+  font-size: 2.4rem;
+}
+.white2{
+  font-size: 2.4rem;
+  color: #00ff7c;
 }
 
 .leftSection {
@@ -241,12 +256,15 @@ nav ul li a {
 }
 
 .about-section h2 {
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   margin-bottom: 20px;
+  color: #3bff12;
 }
 
 .about-section h2 span {
   color: #4caf50;
+  color: #2cb3a0;
+  font-size: 27px;
 }
 
 .about-content {
@@ -289,16 +307,26 @@ img {
 }
 .text1 {
   margin-top: 4px;
-}
+  font-size: 21px;
+  font-size: 1.3rem;
 
+}
+.music li{
+  /* color: #fffb00; */
+  font-size: 1.6rem;
+  color: #00ff7c;
+  margin: 12px 0px -14px 0px;
+}
 .text1 ul {
   list-style: none;
   padding: 0;
 }
 
 .text1 li {
-  padding: 4px;
-  font-size: 1.1rem;
+  padding: 9px 0px 7px 0px;
+  font-size: 1.4rem;
+
+  
 }
 
 .technical-skills {
@@ -363,7 +391,6 @@ img {
 .paragraph1, .Technicalitem {
   text-align: center;
   font-size: 25px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #3bff12;
   padding: 14px;
   margin: 0; /* Remove default margin */
@@ -452,6 +479,18 @@ img {
   margin: 2px auto;
 }
 
+.myskilset{
+  margin: 0 auto;
+  padding: 17px 75px 17px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #182846;
+  color: #fffb00;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 25px;
+}
+
 /* GitHub Contribution Graph */
 .github-graph {
   text-align: center;
@@ -507,6 +546,57 @@ img {
   }
 }
 
+/* For icon and contact link */
+.contact-section {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 402px;
+  margin: 0 auto;
+}
+
+.contact-section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+    
+}
+.contact-links i{
+  color: #00ff7c;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-links a:hover {
+  transform: translateX(12px); /* Move link to the right on hover */
+}
+/* Increase icon size */
+.fab, .fas {
+  font-size: 29px;
+}
+
+
 /*======= FOOTER ======= */
 .footerclass {
   width: 100%;
@@ -517,8 +607,6 @@ img {
   padding: 10px 20px;
   color: white;
   z-index: 1000; /*Ensures it's above other elements  */
-  /* background-color: #1f355f; Add background color for better visibility */
-  /* border-top: 2px solid rgba(255, 255, 255, 0.1); Optional: Light border */
    }  
 
 
@@ -530,8 +618,6 @@ img {
     left: 0;
   }
 } 
-
-
 
 .footerclass p {
   flex: 1;
@@ -554,4 +640,6 @@ img {
 .footerclass .social-icons a:hover {
   color: #ddd;
 }
+
+
 
