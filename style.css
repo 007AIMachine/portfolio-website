@@ -1,10 +1,8 @@
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
 body {
   display: flex;
@@ -206,7 +204,6 @@ nav ul li a {
   align-items: center;
   padding: 40px 20px;
   flex-wrap: wrap; /* Makes it responsive */
- 
 }
 
 .rightSection {
@@ -214,22 +211,20 @@ nav ul li a {
   font-size: 1.3rem;
   padding: 37px 0px 0px 36px;
   text-align: center;
-  
-  
 }
-.rightSection1{
-  height: 80vh;
+.rightSection1 {
+  height: 17vh;
 }
 .purple {
   color: #3bff12;
   font-size: 1.4rem;
   font-weight: 300;
 }
-.white1{
+.white1 {
   color: white;
   font-size: 2.4rem;
 }
-.white2{
+.white2 {
   font-size: 2.4rem;
   color: #00ff7c;
 }
@@ -242,7 +237,7 @@ nav ul li a {
 }
 
 .leftSection img {
-  height:329px;
+  height: 329px;
   max-width: 560px;
   width: 100%;
   margin: 50px 0;
@@ -309,9 +304,8 @@ img {
   margin-top: 4px;
   font-size: 21px;
   font-size: 1.3rem;
-
 }
-.music li{
+.music li {
   /* color: #fffb00; */
   font-size: 1.6rem;
   color: #00ff7c;
@@ -325,8 +319,6 @@ img {
 .text1 li {
   padding: 9px 0px 7px 0px;
   font-size: 1.4rem;
-
-  
 }
 
 .technical-skills {
@@ -377,9 +369,6 @@ img {
 
 /* New Section Styles */
 
-
-
-
 /* For large desktops (min-width: 1024px) */
 @media screen and (min-width: 1024px) {
   .skills {
@@ -388,7 +377,8 @@ img {
     padding: 50px;
   }
 }
-.paragraph1, .Technicalitem {
+.paragraph1,
+.Technicalitem {
   text-align: center;
   font-size: 25px;
   color: #3bff12;
@@ -400,7 +390,7 @@ img {
   text-align: center;
   padding: 12px;
   font-weight: 700;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 19px;
   color: white; /* Add a readable color for the paragraph */
   line-height: 1.6; /* Improve readability */
@@ -412,11 +402,10 @@ img {
   text-align: center;
   font-size: 20px;
   background-color: #182846;
-  color:#00f3ff; /* Ensure text is readable on dark background */
+  color: #00f3ff; /* Ensure text is readable on dark background */
   border-radius: 8px; /* Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
-
 
 .skills ul {
   list-style-type: none; /* Remove bullet points */
@@ -440,8 +429,6 @@ img {
   top: 50%; /* Center vertically */
   transform: translateY(-50%); /* Center vertically */
 }
-
-
 
 /* /* Skills Container */
 .skills-container {
@@ -479,7 +466,7 @@ img {
   margin: 2px auto;
 }
 
-.myskilset{
+.myskilset {
   margin: 0 auto;
   padding: 17px 75px 17px;
   text-align: center;
@@ -570,9 +557,8 @@ img {
   display: flex;
   flex-direction: column;
   gap: 10px;
-    
 }
-.contact-links i{
+.contact-links i {
   color: #00ff7c;
 }
 
@@ -592,10 +578,80 @@ img {
   transform: translateX(12px); /* Move link to the right on hover */
 }
 /* Increase icon size */
-.fab, .fas {
+.fab,
+.fas {
   font-size: 29px;
 }
 
+/*This is fork page css for text*/
+
+#fork-projects {
+  text-align: center;
+  padding: 50px;
+  /* background-color: #0a192f; */
+  color: #fff;
+}
+
+#fork-projects h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#fork-projects p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project {
+  background: #112240;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+}
+
+.project a {
+  display: inline-block;
+  color: #64ffda;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.github-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: #64ffda;
+  color: #0a192f;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.github-btn:hover {
+  background: #52e0c4;
+}
 
 /*======= FOOTER ======= */
 .footerclass {
@@ -607,29 +663,28 @@ img {
   padding: 10px 20px;
   color: white;
   z-index: 1000; /*Ensures it's above other elements  */
-   }  
-
+}
 
 /* Footer style for desktop screens (fixed position) */
- @media (min-width: 769px) {
+@media (min-width: 769px) {
   .footerclass {
     /* position: fixed; */
     bottom: 0;
     left: 0;
   }
-} 
+}
 
 .footerclass p {
   flex: 1;
   text-align: left;
-} 
+}
 
 .footerclass .social-icons {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 15px;
-} 
+}
 
 .footerclass .social-icons a {
   color: white;
@@ -640,6 +695,3 @@ img {
 .footerclass .social-icons a:hover {
   color: #ddd;
 }
-
-
-
