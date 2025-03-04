@@ -750,3 +750,12 @@ img {
 .footerclass .social-icons a:hover {
   color: #ddd;
 }
+
+
+
+
+/*java script text effect */
+#element{
+  font-weight: bold;
+  font-size: 22px;
+}
