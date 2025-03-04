@@ -197,7 +197,7 @@ nav ul li a {
   }
 }
 
-/* ======= HERO SECTION ======= */
+/* -----First Section -------*/
 .firstSection {
   display: flex;
   justify-content: space-around;
@@ -305,10 +305,64 @@ img {
   font-size: 21px;
   font-size: 1.3rem;
 }
+
+/*hobbies clss */
+/* Base styles */
+.hobby-text {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.hobbies, .hob1, .hob2 {
+  font-weight: 300;
+  display: inline-block;
+  animation: shine 2s infinite, dance 1.5s infinite;
+}
+
+.hobbies {
+  color: #d2fd00;
+}
+
+.hob1 {
+  color: #ff9b00;
+}
+
+.hob2 {
+  color: #ff00b3;
+}
+
+/* Shine animation */
+/* @keyframes shine {
+  0%, 100% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7), 0 0 20px currentColor;
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.9), 0 0 25px rgba(255, 255, 255, 0.9), 0 0 35px currentColor;
+  }
+} */
+
+/* Dance animation */
+@keyframes dance {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(5px) rotate(-2deg);
+  }
+}
+
+
 .music li {
   /* color: #fffb00; */
   font-size: 1.6rem;
-  color: #00ff7c;
+  /* color: #00ff7c; */
   margin: 12px 0px -14px 0px;
 }
 .text1 ul {
@@ -575,7 +629,8 @@ img {
 }
 
 .contact-links a:hover {
-  transform: translateX(12px); /* Move link to the right on hover */
+   transform: translateX(12px); /* Move link to the right on hover */
+  
 }
 /* Increase icon size */
 .fab,
