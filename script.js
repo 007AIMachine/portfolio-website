@@ -56,47 +56,30 @@
   });
 
   // Initialize Typed.js
-  // var typed = new Typed('#element', { 
-  //   strings: [
-  //     'Python.', 
-  //     'Java.', 
-  //     'HTML.', 
-  //     'CSS.', 
-  //     'JavaScript.', 
-  //     'Node.js.', 
-  //     'MySQL.', 
-  //     'React.js.'
-  //   ],
-    // typeSpeed: 50,      // Typing speed
-    // backSpeed: 25,      // Backspacing speed
-    // backDelay: 1000,    // Delay before deleting
-    // startDelay: 500,    // Delay before starting the typing effect
-  //  /         // Loops the animation
-  // });
-
   var colors = ["#3bff12", "#fffb00", "#d2fd00", "orange", "#3bff12", "cyan", "magenta", "#64ffda"];
 
-var typed = new Typed('#element', {
-  strings: [
-    'Python.', 
-    'Java.', 
-    'HTML.', 
-    'CSS.', 
-    'JavaScript.', 
-    'Node.js.', 
-    'MySQL.', 
-    'React.js.'
-  ],
-  typeSpeed: 50,
-  backSpeed: 25,
-  backDelay: 1000,
-  startDelay: 500,
-  loop: true,
-  preStringTyped: function(index) {
-    document.querySelector('#element').style.color = colors[index % colors.length];
-  }
-});
-
+  var typed = new Typed('#element', {
+    strings: [
+      'Python.', 
+      'Java.', 
+      'HTML.', 
+      'CSS.', 
+      'JavaScript.', 
+      'Node.js.', 
+      'MySQL.', 
+      'React.js.'
+    ],
+    typeSpeed: 50,
+    backSpeed: 25,
+    backDelay: 1000,
+    startDelay: 500,
+    loop: true,
+    preStringTyped: function(index) {
+      document.querySelector('#element').style.color = colors[index % colors.length];
+    }
+  });
+  
+  
  
 
 function toggleMenu() {
