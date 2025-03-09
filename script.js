@@ -78,41 +78,20 @@ var typed = new Typed("#element", {
 });
 
 
+// script.js
 
-
-// Math and Physics Effect
-const mathContainer = document.getElementById("math-effect");
-// List of math/physics symbols and equations
-const mathSymbols = [
-  "E = mc²",
-  "F = ma",
-  "∇ x E = -∂B/∂t",
-  "∫ f(x) dx",
-  "∑ x_i",
-  "√2",
-  "π ≈ 3.1416",
-  "a² + b² = c²",
-  "e^(iπ) + 1 = 0",
-  "ψ(x, t) = A sin(kx - ωt)",
-  "H = T + V",
-];
-
-// Function to create a floating math text element
-function createMathText() {
-  const mathText = document.createElement("div");
-  mathText.className = "math-text";
-  mathText.textContent = mathSymbols[Math.floor(Math.random() * mathSymbols.length)];
-  mathText.style.left = `${Math.random() * 100}vw`; // Random horizontal position
-  mathText.style.top = `${Math.random() * 100}vh`; // Random vertical position
-  mathContainer.appendChild(mathText);
-
-  // Remove the text element after animation ends
-  mathText.addEventListener("animationend", () => {
-    mathText.remove();
-  });
+// Function to toggle the mobile menu
+function toggleMenu() {
+  const menuContent = document.querySelector('.menu-content');
+  menuContent.classList.toggle('show');
 }
 
-// Create a new math text element every 2 seconds
-setInterval(createMathText, 2000);
-
-
+// Optional: Close the menu when a link is clicked (for better UX)
+document.querySelectorAll('.menu-content li a').forEach(link => {
+  link.addEventListener('click', () => {
+    const menuContent = document.querySelector('.menu-content');
+    if (menuContent.classList.contains('show')) {
+      menuContent.classList.remove('show');
+    }
+  });
+});
