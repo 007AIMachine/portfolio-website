@@ -45,6 +45,17 @@ nav .right {
   color: white;
 }
 
+.right a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Keeps the text color same as the parent */
+  transition: color 0.3s ease-in-out;
+}
+
+.right a:hover {
+  color: #3498db; /* Changes color on hover */
+}
+
+
 /* Desktop Navigation Menu */
 nav ul {
   display: flex;
@@ -463,7 +474,22 @@ img {
   color: #00f3ff; /* Ensure text is readable on dark background */
   border-radius: 8px; /* Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; 
 }
+
+
+.skills li {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  display: inline-block; /* Ensures smooth transform */
+}
+
+.skills li:hover {
+  transform: scale(1.1); /* Slight zoom effect on text */
+  color: #3498db; /* Change text color */
+}
+
+
+
 
 .skills ul {
   list-style-type: none; /* Remove bullet points */
@@ -472,10 +498,11 @@ img {
 }
 
 .skills li {
-  margin: 10px 0; /* Add spacing between list items */
+  margin: 10px 5px; /* Add spacing between list items */
   padding-left: 20px; /* Add space for the arrow/bullet */
   position: relative; /* Required for positioning the arrow/bullet */
   text-align: left; /* Align text to the left */
+  
 }
 
 .skills li::before {
