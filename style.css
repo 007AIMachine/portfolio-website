@@ -536,6 +536,15 @@ img {
   font-size: 25px;
 }
 
+.myskilset:hover {
+  transform: scale(1.1);
+  color: rgb(5, 255, 5);
+ 
+}
+.myskilset {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Transition applies to both transform & color */
+}
+
 /* GitHub Contribution Graph */
 .github-graph {
   text-align: center;
