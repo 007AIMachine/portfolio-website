@@ -78,8 +78,6 @@ var typed = new Typed("#element", {
 });
 
 
-// script.js
-
 // Function to toggle the mobile menu
 function toggleMenu() {
   const menuContent = document.querySelector('.menu-content');

@@ -453,6 +453,10 @@ img {
   color: #3bff12;
   padding: 14px;
   margin: 0; /* Remove default margin */
+  cursor: pointer;
+}
+.paragraph1:hover{
+  color: red;
 }
 
 .Tech-Skill {
@@ -488,9 +492,6 @@ img {
   color: #3498db; /* Change text color */
 }
 
-
-
-
 .skills ul {
   list-style-type: none; /* Remove bullet points */
   padding: 0;
@@ -503,6 +504,9 @@ img {
   position: relative; /* Required for positioning the arrow/bullet */
   text-align: left; /* Align text to the left */
   
+}
+ .skills ul li {
+  cursor: pointer;
 }
 
 .skills li::before {
