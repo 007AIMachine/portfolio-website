@@ -55,7 +55,6 @@ nav .right {
   color: #3498db; /* Changes color on hover */
 }
 
-
 /* Desktop Navigation Menu */
 nav ul {
   display: flex;
@@ -208,36 +207,61 @@ nav ul li a {
   }
 }
 
-/* -----First Section -------*/
 .firstSection {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 40px 20px;
-  flex-wrap: wrap; /* Makes it responsive */
+  flex-wrap: wrap;
 }
 
-.rightSection {
-  flex: 1;
-  font-size: 1.3rem;
-  padding: 37px 0px 0px 36px;
-  text-align: center;
+ .rightSection {
+
+  font-size: 1.1rem;       /* Use only one font-size (1.1rem wins here) */
+  line-height: 1.6;        /* Good for readability */
+        /* Center-align all text (remove 'left' if not needed) */
+  max-width: 800px;        /* Optional: Prevent overly long lines */
+  margin: 0 auto;          /* Center the container horizontally */
+  padding: 1rem;           /* Add space around text */
 }
+
+
 .rightSection1 {
   height: 17vh;
 }
 .purple {
   color: #3bff12;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 .white1 {
   color: white;
-  font-size: 2.4rem;
+  font-size: 1.4rem;
+  padding: 21px;
+  position: relative;
+  top: 19px;
 }
 .white2 {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   color: #00ff7c;
+  position: relative;
+  top: 19px;
+  margin: -20px;
+}
+.center-text {
+  max-width: 800px; /* Limit text width for better readability */
+  margin: 0 auto; /* Center the text block */
+  padding: 20px;
+  text-align: left;
+  line-height: 1.6; /* Proper spacing between lines */
+  font-size: 1.1rem; /* Appropriate text size */
+}
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .Tech-Skill {
+    padding: 15px;
+    font-size: 1rem;
+  }
 }
 
 .leftSection {
@@ -248,20 +272,21 @@ nav ul li a {
 }
 
 .leftSection img {
-  height: 329px;
+  height: 384px;
   max-width: 560px;
   width: 100%;
   margin: 50px 0;
 }
 
+
 /* ======= ABOUT SECTION ======= */
-.about-section {
+ .about-section {
   text-align: center;
   padding: 50px 20px;
-  margin-top: 20px; /* Add space between hero section and about section */
-}
+  margin-top: 20px; /*Add space between hero section and about section */
+} 
 /*java script text effect */
-#element{
+#element {
   font-weight: bold;
   font-size: 22px;
 }
@@ -281,7 +306,14 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Space between text and skills */
+  gap: 20px; /*Space between text and skills  */
+}
+
+.My-image img{
+  width: 100%;
+  height: 90%;
+ border-radius: 0;
+ opacity: 0.2;
 }
 
 .about-text {
@@ -289,6 +321,7 @@ nav ul li a {
   font-size: 1.2rem;
   line-height: 1.6;
 }
+
 /* ======= About, contact, forkpro, Image ======= */
 .about-img,
 .projects-img,
@@ -318,48 +351,14 @@ img {
 .text1 {
   margin-top: 4px;
   font-size: 21px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 
-/*hobbies class */
-/* Base styles */
-.hobby-text {
-  font-size: 1.2em;
-  font-weight: 300;
-  line-height: 1.6;
-}
 
-.hobbies, .hob1, .hob2 {
-  font-weight: 300;
-  display: inline-block;
-  animation: shine 2s infinite, dance 1.5s infinite;
-}
-
-.hobbies {
-  color: #d2fd00;
-}
-
-.hob1 {
-  color: #ff9b00;
-}
-
-.hob2 {
-  color: #ff00b3;
-}
-
-/* Shine animation */
-/* @keyframes shine {
-  0%, 100% {
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7), 0 0 20px currentColor;
-  }
-  50% {
-    text-shadow: 0 0 12px rgba(255, 255, 255, 0.9), 0 0 25px rgba(255, 255, 255, 0.9), 0 0 35px currentColor;
-  }
-} */
-
-/* Dance animation */
 @keyframes dance {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(0deg);
   }
   25% {
@@ -372,7 +371,6 @@ img {
     transform: translateY(5px) rotate(-2deg);
   }
 }
-
 
 .music li {
   /* color: #fffb00; */
@@ -450,12 +448,13 @@ img {
 .Technicalitem {
   text-align: center;
   font-size: 25px;
-  color: #3bff12;
+  color: #ffcb00;
   padding: 14px;
   margin: 0; /* Remove default margin */
   cursor: pointer;
 }
-.paragraph1:hover{
+
+.paragraph1:hover {
   color: red;
 }
 
@@ -478,9 +477,8 @@ img {
   color: #00f3ff; /* Ensure text is readable on dark background */
   border-radius: 8px; /* Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-
 
 .skills li {
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -503,9 +501,8 @@ img {
   padding-left: 20px; /* Add space for the arrow/bullet */
   position: relative; /* Required for positioning the arrow/bullet */
   text-align: left; /* Align text to the left */
-  
 }
- .skills ul li {
+.skills ul li {
   cursor: pointer;
 }
 
@@ -570,7 +567,6 @@ img {
 .myskilset:hover {
   transform: scale(1.1);
   color: rgb(5, 255, 5);
- 
 }
 .myskilset {
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Transition applies to both transform & color */
@@ -673,8 +669,7 @@ img {
 }
 
 .contact-links a:hover {
-   transform: translateX(12px); /* Move link to the right on hover */
-  
+  transform: translateX(12px); /* Move link to the right on hover */
 }
 /* Increase icon size */
 .fab,
@@ -714,7 +709,6 @@ img {
   position: relative;
   top: 2px; /* Move icon up/down */
 }
-
 
 /*This is fork page css for text*/
 
@@ -787,7 +781,7 @@ img {
 }
 
 /*======= FOOTER ======= */
-.footerclass {
+ .footerclass {
   width: 100%;
   font-size: 20px;
   display: flex;
@@ -795,17 +789,26 @@ img {
   align-items: center;
   padding: 10px 20px;
   color: white;
-  z-index: 1000; /*Ensures it's above other elements  */
-}
+  z-index: 1000; 
+} 
 
-/* Footer style for desktop screens (fixed position) */
-@media (min-width: 769px) {
+/* Footer style for desktop screens (fixed position 769) */
+ @media (min-width: 769px) {
   .footerclass {
-    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+  }
+} 
+
+/* Footer style for iPad screen mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerclass {
+   position: relative; /*Ensure it stays at the bottom of the content */
     bottom: 0;
     left: 0;
   }
 }
+
 
 .footerclass p {
   flex: 1;
@@ -828,7 +831,4 @@ img {
 .footerclass .social-icons a:hover {
   color: #ddd;
 }
-
-
-
 
